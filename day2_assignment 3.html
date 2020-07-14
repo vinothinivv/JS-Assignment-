@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title> Javascript - Display Date & Time in Different Formats</title>
+        <style>
+                body
+                {
+                    background-color: #050928;
+                    color: white;
+                }h2 {
+                  color: white;
+                  font-family: verdana;
+                  text-align: center;
+                }
+                .clock-image img
+                { 
+                    display: block;
+                    margin: 0 auto;
+                    height:500px;
+                }
+                .content
+                {
+                    color: white;
+                    font-size: 25px;
+                    display: block;
+                    margin-left: 550px;
+                    margin-right: 460px;
+                    height:600px;
+                }
+                span{
+                    color: yellow;
+
+                }
+        </style>  
+    </head>
+    <body>
+        <h2 color="white"> <u>Display Date and Time in Different Formats Using Javascript </u> </h2>
+        <!-- <div class="clock-image"> <img src="img/clock.png"> </div> -->
+        <div class="content">
+            <b>SAMPLE OUTPUT IS</b>
+                <p>First Format  : <span id="type1"> </span><br>
+                   Second Format : <span id="type2"> </span> </p>
+        </div> 
+        <script>
+            //display day
+            var today = new Date();
+            var day = today.getDay();
+            var month = today.getMonth();
+            var year = today.getFullYear();
+            var date1 = day+" " + "-" +" " + month +" " + "-" +" " + year;
+            var date2 = day+" " + "/" +" "+ month +" " + "/" +" " + year;
+            document.getElementById("type1").innerHTML= date1;
+            document.getElementById("type2").innerHTML= date2;
+        </script>
+    </body>
+</html>
