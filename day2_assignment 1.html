@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> Javascript - Display Date & Time</title>
+        <style>
+                body
+                {
+                    background-color: #050928;
+                    color: white;
+                }h2 {
+                  color: white;
+                  font-family: verdana;
+                  text-align: center;
+                }
+                .clock-image img
+                { 
+                    display: block;
+                    margin: 0 auto;
+                    height:500px;
+                }
+                .content
+                {
+                    color: white;
+                    font-size: 25px;
+                    display: block;
+                    margin-left: 550px;
+                    margin-right: 460px;
+                    height:600px;
+                }
+                span{
+                    color: yellow;
+
+                }
+        </style>  
+    </head>
+    <body>
+        <h2 color="white"> <u>Display Date and Time Using Javascript </u> </h2>
+        <div class="clock-image"> <img src="img/clock.png"> </div>
+        <div class="content">
+            <b>Sample output is</b><br>
+                <p>Today is : <span id="day"> </span><br>
+                Current Time is : <span id="date"> </span> </p>
+        </div> 
+        <script>
+            //display day
+            var today = new Date();
+            var day = today.getDay();
+            var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            document.getElementById("day").innerHTML=  daylist[day];
+            
+            //diplay date
+            var hour = today.getHours();
+            var min = today.getMinutes();
+            var sec = today.getSeconds();
+            var time = (hour>=12)? hour-12 + "PM" + ":" + min + ":" + sec : hour + "AM" + ":"+ min +":" +sec;
+            document.getElementById("date").innerHTML= time;
+        </script>
+    </body>
+</html>
