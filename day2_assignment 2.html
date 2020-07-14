@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title> Javascript - Print the current page</title>
+        <style>
+                body
+                {
+                    background-color: #050928;
+                    color: white;
+                }h2 {
+                  color: white;
+                  font-family: verdana;
+                  text-align: center;
+                }
+                .clock-image img
+                { 
+                    display: block;
+                    margin: 0 auto;
+                    height:500px;
+                }
+                .content
+                {
+                    color: white;
+                    font-size: 25px;
+                    display: block;
+                    margin-left:420px;
+                    margin-right: 420px;
+                    padding-top: 30px;
+                    height:600px;
+                }
+                .content p{
+                    font-size: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+        </style>    
+    </head>
+    <body>
+        <h2 color="white"> <u><p>Click the button to print the current page.</p> </u> </h2>
+        <div class="clock-image"> <img src="img/js.png"> </div>
+        <div class="content">         
+            <p>JAVASCRIPT ROWDIES.<BR>Learn Javascript from Zero to Hero.</p>
+            <button onclick="print_page()">Print this page</button>
+        </div>
+        <script>
+           function print_page()
+           {
+               window.print();
+           }
+        </script>
+    </body>
+</html>
