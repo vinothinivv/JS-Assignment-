@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day3 Assignment 2</title>
+</head>
+<body>
+    <h2> Difference between var, let and const</h2>
+    <h4> Variable</h4>
+    <p> <b>var </b> means Variable, which is globally scoped. Globally Scoped means, var is declared outside the 
+        block of function.</p>
+    <script>
+        var intro = "hello vinothini!";
+    function func() {
+        var intro = "vinothini";
+    }
+    console.log(intro);
+    </script>
+    <p> Above, we can give the same the name is declared for two variable. But, in the output, 
+        'hello vinothini' is displayed. Beacuse, var is globally scoped. </p>
+
+    <h4> Let</h4>
+        <p> Anything within curly braces is a block. let is live in the block</p>
+        <script>
+            let intro1 = "say Hi";
+            let times = 4;
+            if (times > 3) {
+                let hello1 = "say Hello instead";
+                console.log(hello1);// "say Hello instead"
+            }
+            console.log(hello1); // hello is not defined;
+        </script>
+        <p> Using hello1 outside its block (the curly braces where it was defined) returns an error. This is because let variables are 
+            block scoped . </p>
+
+        <h4> Constant</h4>
+        <p> Variables declared with the const maintain constant values.Every const declaration, therefore, must be initialized at the time of 
+            declaration.</p>
+        <script>
+            const message = "Javascript Rowdies";
+            console.log(message);
+        </script>
+
+</body>
+</html>
