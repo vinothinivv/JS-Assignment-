@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Types</title>
+</head>
+<body>
+        <h2><u> Types of Data Types</u></h2>
+        <p> Data types basically specify what kind of data can be stored. There are six basic data types in JavaScript,
+             which can be divided into three main categories: <b> (or primary), composite (or reference), and special data types.</b> String,
+                  Number, and Boolean are primitive data types. Object, Array, and Function (which are all types of objects) are composite data types. 
+                  Whereas Undefined and Null are special data types.</b></p>
+        <ul>
+            <li> String </li>
+            <li> Number </li>
+            <li> Boolean </li>
+            <li> Object </li>
+            <li> Array </li>
+            <li> Function </li>
+        </ul>
+        <h3>String Data Type</h3>
+        <p> The string data type is used to represent textual data (i.e. sequences of characters). Strings are created using single or double quotes 
+            surrounding one or more characters</p>
+            <script>
+                    // Creating variables
+                    var a = 'Hi there!';  // using single quotes
+                    var b = "Hi there!";  // using double quotes
+                    
+                    // Printing variable values
+                    document.write(a + "<br>");
+                    document.write(b);
+            </script>
+
+        <h3>Number Data Type</h3>
+        <p> The number data type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential 
+            notations.</p>
+            <script>
+                // Creating variables
+                var a = 25;
+                var b = 80.5;
+                var c = 4.25e+6;
+                var d = 4.25e-6;
+                
+                // Printing variable values
+                document.write(a + "<br>");
+                document.write(b + "<br>");
+                document.write(c + "<br>");
+                document.write(d);
+            </script>
+        
+        <h3>Boolean Data Type</h3>
+        <p> The Boolean data type can hold only two values: true or false. It is typically used to store values like yes (true) or no (false).</p>
+        <script>
+                // Creating variables
+                var isReading = true;   // yes, I'm reading
+                var isSleeping = false; // no, I'm not sleeping
+                
+                // Printing variable values
+                document.write(isReading + "<br>");
+                document.write(isSleeping);
+        </script>
+        
+        <h3>Array Data Type</h3>
+        <p>The object is a complex data type that allows you to store collections of data. An object contains properties, defined 
+            as a key-value pair. A property key (name) is always a string, but the value can be any data type, like strings, 
+            numbers, booleans, or complex data types like arrays, function and other objects. </p>
+            <script>
+                    var car = {
+                        modal: "Inova",
+                        color: "white",
+                        doors: 2
+                    }
+                    console.log(car);
+            </script>
+
+        <h3>Object Data Type</h3>
+        <p>An array is a type of object used for storing multiple values in single variable.The array index starts from 0, so that the first 
+           array element is arr[0] not arr[1]. </p>
+           <script>
+                // Creating arrays
+                var colors = ["Red", "Yellow", "Green", "Orange"];
+                var cities = ["Erode", "Coimbatore", "Chennai"];
+                
+                // Printing array values
+                document.write(colors[0] + "<br>");   
+                document.write(cities[2]); 
+                </script>
+
+    <h3>Function Data Type</h3>
+    <p>The function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to 
+        variables </p>
+        <script>
+                function myname(){
+                    return "vinothini vellingiri"
+                }
+                document.write(myname()); 
+        </script>
+</body>
+</html>
